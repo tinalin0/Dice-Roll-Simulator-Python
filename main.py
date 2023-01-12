@@ -1,3 +1,5 @@
+import random
+
 # Dice Roll Simulator
 loop = True
 
@@ -10,5 +12,8 @@ while loop == True:
     print("3. Roll Dice 'n' Times")
     print("4. Roll Dice until Snake Eyes")
     print("5. Exit")
+
     # Input
     option = input("Select an option (1-5): ")
+
+    # Process
