@@ -20,17 +20,20 @@ while loop == True:
 
     # Process
     if option == 1:
+        # Roll Dice Once
         dice1 = random.randint(1, 6)
         dice2 = random.randint(1, 6)
         print("\n" + str(dice1) + "," + str(dice2) +
               "(sum: " + str(dice1+dice2) + ")")
     elif option == 2:
+        # Roll Dice Five Times
         for x in range(5):
             dice1 = random.randint(1, 6)
             dice2 = random.randint(1, 6)
             print(str(dice1) + "," + str(dice2) +
                   "(sum: " + str(dice1+dice2) + ")")
     elif option == 3:
+        # Roll Dice n Times
         num_times = input("\nHow many rolls would you like? ")
         for x in range(int(num_times)):
             dice1 = random.randint(1, 6)
@@ -38,6 +41,7 @@ while loop == True:
             print(str(dice1) + "," + str(dice2) +
                   "(sum: " + str(dice1+dice2) + ")")
     elif option == 4:
+        # Roll Dice till Snake Eyes
         num_rolls = 0
         while dice1+dice2 != 2:
             dice1 = random.randint(1, 6)
@@ -48,6 +52,7 @@ while loop == True:
         print("SNAKE EYES! It only took " +
               str(num_rolls) + " rolls to get snake eyes.")
     elif option == 5:
+        # Exit Menu
         loop = False
     else:
         print("That is not an option")
